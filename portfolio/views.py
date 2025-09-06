@@ -4,4 +4,4 @@ from .models import Project
 
 def home(request):
     projects = Project.objects.all()
-    return render(request, '/home/bors/django_projects/personal_portfolio_project/portfolio/templates/portfolio/home.html', {'projects':projects}) 
+    return render(request, 'portfolio/home.html', {'projects':projects})
